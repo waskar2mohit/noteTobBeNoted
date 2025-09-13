@@ -1,0 +1,110 @@
+/* style.css - Single stylesheet for Flask Notes application */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #007bff; /* Blue background for nav */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal rule */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Flashed messages */
+p[style="color: red"] {
+    background-color: #ffebee; /* Light red background for errors */
+    padding: 10px;
+    border: 1px solid #f44336;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Headings */
+h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Green button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Links in paragraphs */
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+}

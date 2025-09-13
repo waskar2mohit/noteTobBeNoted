@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Welcome {{ user.name }}</h2>
+
+<form method="POST" action="{{ url_for('views.add_note') }}">
+    <textarea name="note" placeholder="Write a note..." required></textarea><br>
+    <button type="submit">Add Note</button>
+</form>
+
+<h3>Your Notes</h3>
+<ul>
+    {% for note in user.notes %}
+        <li>{{ note.data }} - {{ note.date }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
